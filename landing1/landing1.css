@@ -24,17 +24,18 @@ a {
 #container {
     width: 1116px;
     height: 4096px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
 nav {
     display: flex;
     width: 83.6%;
-    height: 150px;
+    height: 120px;
     flex-direction: row;
     /* background-color: salmon; */
     justify-content: space-between;
@@ -54,7 +55,7 @@ nav {
 }
 
 span.T {
-    background-color: rgba(27, 80, 238, 0.7);
+    background-color: rgb(90,152,242);
     font-size: 18px;
     font-weight: bolder;
     border-radius: 50%;
@@ -121,7 +122,7 @@ a.active {
 }
 
 .consult-btn {
-    background-color: rgba(27, 80, 238, 0.7);
+    background-color: rgb(90,152,242);
     /* margin-top: 20px; */
 }
 
@@ -183,7 +184,7 @@ a.active {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 25px;
     border-radius: 15px;
     box-shadow: 2px 2px 3px rgba(34, 31, 31, 0.547);
@@ -191,8 +192,8 @@ a.active {
 
 .no-fill-btn {
     /* margin: auto auto; */
-    color: rgba(27, 80, 238, 0.7);
-    border: 1px solid rgba(27, 80, 238, 0.7);
+    color: rgb(90,152,242);
+    border: 1px solid rgb(90,152,242);
     padding: 10px 15px 10px 33px;
 }
 
@@ -223,15 +224,15 @@ a.active {
     justify-content: space-around;
     /* align-items: center; */
     /* height: 100%; */
-
 }
 
 #download {
     width: 85.75%;
     height: 8.78%;
-    background-color: rgba(233, 221, 117, 0.3);
+    /* background-color: rgba(233, 221, 117, 0.3); */
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -245,65 +246,116 @@ a.active {
 
 #download-left {
     width: 40%;
-    height: 100%;
-
-}
-
-#testimonials {
-    width: 85.75%;;
-    height: 14.7%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#testimonial-content {
+    width: 85.75%;;
+    height: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color:rgba(157, 171, 205, 0.3);
+    /* background-color:rgba(157, 171, 205, 0.3); */
 }
 
 #testimonial-card {
     width: 781px;
     height: 297px;
-    background-color: blue;
+    color: white;
+    background: linear-gradient(to right top,rgb(90,152,242), rgb(156, 216, 247));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+}
+
+#testimonial-header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#testimonial-header .divider {
+    background-color: white;
 }
 
 #testimonial {
     width: 100%;
-    height: 115px;
+    height: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 #testimonial-left {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 38.5%;
     height: 115px;
+    padding-left: 15px;
+}
+
+#testimonial-img {
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50px;
+    background-image: url(images/Mask\ Group.png);
+    background-size: cover;
+}
+
+#testimonial-left div {
+    margin-left: 25px;
+    padding-top: 35px;
 }
 
 #testimonial-right {
-    width: 50%;
+    width: 45.5%;
     height: 115px;
+    padding: 20px 0 0 35px;
 }
 
-#articles {
+#testimonial-right p {
+    color: white;
+}
+
+#article-content {
     width: 957px;
     height: 603px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(102, 169, 92, 0.3);
+    /* background-color: rgba(102, 169, 92, 0.3); */
+}
+
+#article-heading {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#article-heading .divider {
+    margin: 30px 0;
 }
 
 #article-list {
     width: 787px;
     height: 360px;
-    background-color: crimson;
+    /* background-color: crimson; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .article-card {
@@ -312,14 +364,46 @@ a.active {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px rgba(34, 31, 31, 0.547);
+    /* justify-content: space-between; */
+}
+
+.article-card-text {
+    margin: 15px 25px;
+}
+
+.article-card-text p {
+    height: 80px;
+    padding: 15px 0;
+}
+
+.article-card-text a {
+    color: rgb(90,152,242);
+    font-size: 13px;
+}
+
+.article-card-text i {
+    margin-left: 10px;
 }
 
 .article-img {
     transform-origin: 0 0;
     transform: scale(0.714);
     width: 100px;
-    height: 10%;
+    height: 50%;
     border-radius: 10px ;
+}
+
+#article-content .no-fill-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    padding: 10px 0;
+    /* padding: 10px 15px 10px 47px; */
 }
 
 /* .article-img {
@@ -333,22 +417,25 @@ a.active {
 
 #footer {
     width: 1116px;
-    height: 418px;
+    height: 300px;
     background-color: rgba(164, 38, 38, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to right top,rgb(90,152,242), rgb(156, 216, 247));
 }
 
 #footer-content {
     width: 880px;
     height: 175px;
-    background-color: rgba(227, 228, 157, 0.3);
-    margin-top: 100px;
+    /* background-color: rgba(227, 228, 157, 0.3); */
+    /* margin-top: 100px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: white;
+    font-size: 13px;
 }
 
 #trafalgar-tm {
@@ -356,5 +443,32 @@ a.active {
     flex-direction: column;
     height: 175px;
     width: 283px;
-    background-color: darkolivegreen;
+    /* background-color: darkolivegreen; */
+    justify-content: space-evenly;
+}
+
+#trafalgar-tm p {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#trafalgar-tm p:nth-of-type(2) {
+    font-size: 10px;
+}
+
+#trafalgar-tm .T{
+    background-color: white;
+    color: rgb(90,152,242);
+    padding: 0px 5px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    justify-content: space-evenly;
+}
+
+.footer-div li {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8)
 }
