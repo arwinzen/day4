@@ -18,9 +18,7 @@ a {
     width: 35px;
     height: 3px;
     background-color: black;
-    position: absolute;
-    left: 388px;
-    top: 60px;
+    /* position: absolute; */
 }
 
 #container {
@@ -148,6 +146,11 @@ a.active {
     /* background-color: rgba(113, 40, 40, 0.4); */
 }
 
+.description .divider {
+    left: 388px;
+    top: 60px;
+}
+
 .description p {
     font-size: 13px;
     line-height: 25px;
@@ -180,14 +183,14 @@ a.active {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-left: 25px;
     border-radius: 15px;
     box-shadow: 2px 2px 3px rgba(34, 31, 31, 0.547);
 }
 
 .no-fill-btn {
-    margin: auto auto;
+    /* margin: auto auto; */
     color: rgba(27, 80, 238, 0.7);
     border: 1px solid rgba(27, 80, 238, 0.7);
     padding: 10px 15px 10px 33px;
@@ -196,7 +199,7 @@ a.active {
 #info {
     width: 85.75%;
     height: 14.86%;
-    background-color: rgba(166, 235, 160, 0.4);
+    /* background-color: rgba(166, 235, 160, 0.4); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -205,7 +208,7 @@ a.active {
 
 #info-left {
     width: 60%;
-    height: 100%;
+    height: 65%;
     background-image: url(images/trafalgar-illustration\ sec02\ 1.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -213,7 +216,13 @@ a.active {
 
 #info-right {
     width: 30%;
-    height: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* height: 100%; */
 
 }
 
